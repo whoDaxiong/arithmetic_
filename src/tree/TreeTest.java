@@ -33,7 +33,7 @@ public class TreeTest {
 	/**
 	 * 动态创建二叉数（二叉查找树）
 	 * 
-	 * @param rootNode
+	 * @param treeRoot
 	 *            根节点
 	 * @param value
 	 *            节点值
