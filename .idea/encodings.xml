@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/LinkedList/Node.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/LinkedList/TestLinkList.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/sort/Bubble.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/tree/TreeNode.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/tree/TreeTest.java" charset="GBK" />
   </component>
