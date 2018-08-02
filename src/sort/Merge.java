@@ -2,18 +2,20 @@ package sort;
 
 import java.util.Arrays;
 
+/**
+ * 归并排序
+ * 		讲两个有序数据，填充到一个数组中
+ */
 public class Merge {
 	  public static void main(String[] args) {
 	        int[] arrays = {9, 2, 5, 1, 3, 2, 9, 5, 2, 1, 8};
 	        mergeSort(arrays, 0, arrays.length - 1);
 
 	        System.out.println(Arrays.toString(arrays));
-
-
 	    }
 
 	    /**
-	     * 归并排序
+	     * 分组
 	     *
 	     * @param arrays
 	     * @param L      指向数组第一个元素
@@ -25,7 +27,6 @@ public class Merge {
 	        if (L == R) {
 	            return;
 	        } else {
-
 	            //取中间的数，进行拆分
 	            int M = (L + R) / 2;
 
@@ -66,7 +67,7 @@ public class Merge {
 	            rightArray[i - M] = arrays[i];
 	        }
 
-
+			//i左数组下标，j右数组下标
 	        int i = 0, j = 0;
 	        // arrays数组的第一个元素
 	        int  k = L;
@@ -74,11 +75,9 @@ public class Merge {
 
 	        //比较这两个数组的值，哪个小，就往数组上放
 	        while (i < leftArray.length && j < rightArray.length) {
-
 	            //谁比较小，谁将元素放入大数组中,移动指针，继续比较下一个
 	            if (leftArray[i] < rightArray[j]) {
 	                arrays[k] = leftArray[i];
-
 	                i++;
 	                k++;
 	            } else {
