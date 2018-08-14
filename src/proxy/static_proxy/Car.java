@@ -12,6 +12,7 @@ public class Car implements Moveable {
     public void move() {
         try {
             Thread.sleep(new Random().nextInt(1000));
+            System.out.println("car driver...");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

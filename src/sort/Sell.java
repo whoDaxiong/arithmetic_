@@ -3,7 +3,8 @@ package sort;
 import java.util.Arrays;
 
 /*
- * 希尔排序
+ * 希尔排序\非稳定排序算法
+ * 分组的插入排序
  */
 public class Sell {
 	public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class Sell {
 				int temp = arrays[j];
 
 				// j - step 就是代表与它同组隔壁的元素
-				while (j - step >= 0 && arrays[j - step] > temp) {
+				while (j - step >= 0&& arrays[j - step] > temp) {
 					arrays[j] = arrays[j - step];
 					j = j - step;
 				}

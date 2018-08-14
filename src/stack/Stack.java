@@ -14,7 +14,7 @@ public class Stack {
     }
 
     /**
-     * 进栈
+     * 压栈
      * @param stack 进栈
      * @param value 要进栈的元素
      */
@@ -50,18 +50,18 @@ public class Stack {
     }
 
     /**
-     * 出栈
+     * 弹栈
      * @param stack
      */
-    public static void popStack(Stack stack) {
+    public static int popStack(Stack stack) {
+        int value = -1;
         //空栈不可出栈
         if (!Stack.isEmpty(stack)) {
             Node top = stack.stackTop;
             stack.stackTop = top.next;
-            System.out.println("pop ele:"+top.data);
-        } else {
-            System.out.println("stack is null");
+            return top.data;
         }
+        return value;
     }
 
     /**
