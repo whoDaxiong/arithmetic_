@@ -6,7 +6,7 @@ package proxy.static_proxy;
 public class CarLogProxy implements Moveable {
     private Moveable move;
 
-    public CarLogProxy(Moveable move) {
+    CarLogProxy(Moveable move) {
         super();
         this.move = move;
     }

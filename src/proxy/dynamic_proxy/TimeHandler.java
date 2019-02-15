@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 public class TimeHandler implements InvocationHandler{
     private Object target;
 
-    public TimeHandler(Object target) {
+    TimeHandler(Object target) {
         super();
         this.target = target;
     }
@@ -20,7 +20,7 @@ public class TimeHandler implements InvocationHandler{
      * @param proxy     被代理的对象
      * @param method    被代理对象的方法
      * @param args      方法的参数
-     * @return
+     * @return Object   方法的返回值
      * @throws Throwable
      */
     @Override
@@ -28,6 +28,7 @@ public class TimeHandler implements InvocationHandler{
         long startTime = System.currentTimeMillis();
         System.out.println("car runtime begin..");
 
+        //原始方法
         method.invoke(target);
 
         long endTime = System.currentTimeMillis();
